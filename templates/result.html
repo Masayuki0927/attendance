@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block header %}
+
+{% endblock header %}
+
+
+{% block content %}
+
+<p>{{ object.attend }}</p>
+<p>{{ object.time }}</p>
+<p>{{ object.date }}</p>
+<p>{{ object.user_id }}</p>
+
+<a href="{% url 'index' %}">戻る</a>
+<a href="{% url 'list' %}">月の一覧へ</a>
+
+{% endblock content %}

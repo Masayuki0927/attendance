@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block header %}
+{% endblock header %}
+
+
+
+{% block content %}
+
+<h2>勤怠</h2>
+<form action ='', method="POST">{% csrf_token %}
+{{ form.as_p }}
+<input type="submit" value='作成'>
+</form>
+
+<p><a href="{% url 'list' %}">一覧</a></p>
+<a href="{% url 'logout' %}">logout</a>
+
+{% endblock content %}
